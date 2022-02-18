@@ -41,21 +41,22 @@ body{
     position: absolute;
     font-family: monospace;
     font-weight: bold;
-    bottom: 0;
-    height: 50px;
-    left: 82.9%;
+    top:0;
+    right: 0;
     border:none;
     cursor: pointer;
     padding: 0.4rem;
     color: rgb(31, 30, 30);
     background-color: gold;
-    transition: opacity 0.2s ease;
+    transform: translate(0,20%);
+    transition: opacity 0.2s ease, transform 0.2s ease;
     opacity: 0;
 
 
 }
 .passwrod:hover button{
     opacity: 1;
+   
 }
 
 .pw-body{

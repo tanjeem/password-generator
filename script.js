@@ -65,9 +65,24 @@ function generateRetunPassword(){
     if(upperElement.checked){
         xs.push(getSymbol());
     }
+    if ( xs.length === 0) return "";
 
     return xs[Math.floor(Math.random() * xs.length)];
 
 }
 
 generateElement.addEventListener('click',generatePassword );
+
+copyElement.addEventListener('click', () => {
+	const textarea = document.createElement('textarea');
+	const password = passwordElement.innerText;
+	
+	if(!password) { return; }
+	
+	textarea.value = password;
+	document.body.appendChild(textarea);
+	textarea.select();
+	document.execCommand('copy');
+	textarea.remove();
+	alert('Password copied to clipboard');
+});

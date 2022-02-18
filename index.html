@@ -4,21 +4,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="/style.css">
+    <script src="/script.js" defer></script>
     <title>Password generator</title>
 </head>
 <body>
     <div class="password-container">
         <div class="pw-header">
-            <div class="passwrod" id="password">
+            <div class="passwrod">
+                <span id="password">SDFhjlasdhf1&</span>
                 <button id="copy">📋 Copy</button>
             </div>
+            
         </div>
         <div class="pw-body">
             <div class="form">
                 <label for="length">Password Length</label>
-                <input id="length" value="20" type="number" min="4" max="40">
+                <input id="length" value="15" type="number" min="8" max="40">
             </div>
             <div class="form">
                 <label for="upper">Contain Uppercase Letters</label>
